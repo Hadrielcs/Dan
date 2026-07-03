@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dan!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #fff5e6 0%, #fbd2d7 50%, #e6c5e8 100%);
+            background-size: 200% 200%;
+            animation: calmGradient 12s ease infinite;
+            box-sizing: border-box;
+        }
+
+        @keyframes calmGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.96);
+            padding: 45px 35px;
+            border-radius: 30px;
+            max-width: 480px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(230, 197, 232, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            color: #d46a75;
+            font-size: 2.6rem;
+            margin: 0 0 10px 0;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            color: #615556;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            opacity: 0.85;
+        }
+
+        p {
+            color: #524647;
+            font-size: 1.05rem;
+            line-height: 1.75;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #d46a75;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Happy Birthday,<br>Dan! 🎂</h1>
+        <h2>Wishing you a day of rest and peace.</h2>
+        
+        <p>I know things have been heavy and stressful lately, but I want you to know that you aren't carrying it all alone. Your presence matters a lot, and I genuinely appreciate you.</p>
+        
+        <p>I hope today brings you a bit of <span class="highlight">peace</span>, <span class="highlight">comfort</span>, and a reminder of how awesome you are. Take it easy today, you deserve the best!</p>
+    </div>
+
+</body>
+</html>

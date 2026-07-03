@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dan!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0b0c10;
+            font-family: 'Poppins', sans-serif;
+            color: #c5c6c7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .card {
+            background: #1f2833;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 0 30px rgba(102, 252, 241, 0.2);
+            border: 2px solid rgba(102, 252, 241, 0.3);
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px #66fcf1, 0 0 20px #66fcf1, 0 0 40px #45a29e;
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px #66fcf1, 0 0 20px #66fcf1; }
+            100% { text-shadow: 0 0 20px #66fcf1, 0 0 40px #45a29e, 0 0 60px #45a29e; }
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            color: #66fcf1;
+            font-weight: 700;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #45a29e;
+            letter-spacing: 1px;
+            border-top: 1px solid #45a29e;
+            padding-top: 15px;
+        }
+
+        /* Ambient Background Glow */
+        .glow-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(102, 252, 241, 0.4) 0%, rgba(0,0,0,0) 70%);
+            z-index: 1;
+        }
+
+        .circle-1 { width: 400px; height: 400px; top: -100px; left: -100px; }
+        .circle-2 { width: 500px; height: 500px; bottom: -150px; right: -150px; }
+    </style>
+</head>
+<body>
+
+    <div class="glow-circle circle-1"></div>
+    <div class="glow-circle circle-2"></div>
+
+    <div class="card">
+        <h1>Happy Birthday,<br>Dan!</h1>
+        <p>I know things have been stressful lately, but I want you to know that you aren't carrying it all alone. Your presence matters, and I genuinely appreciate you.</p>
+        <p>Take it easy today. I hope this year brings you <span class="highlight">peace</span>, <span class="highlight">comfort</span>, and everything you deserve!</p>
+        
+        <div class="signature">
+        </div>
+    </div>
+
+</body>
+</html>
